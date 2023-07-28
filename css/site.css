@@ -1,0 +1,117 @@
+:root {
+    --gs-theme-core: var(--gs-pink-core);
+    --gs-theme-100: var(--gs-pink-100);
+    --gs-theme-150: var(--gs-gray-150);
+    --gs-theme-200: var(--gs-gray-200);
+    --gs-theme-300: var(--gs-gray-300);
+    --gs-theme-400: var(--gs-pink-400);
+    --gs-theme-500: var(--gs-pink-500);
+    --gs-theme-600: var(--gs-gray-600);
+    --gs-theme-700: var(--gs-gray-700);
+    --gs-theme-800: var(--gs-gray-800);
+    --gs-theme-850: var(--gs-gray-850);
+    --gs-theme-900: var(--gs-gray-900);
+
+    /* #region pink */
+    --gs-pink-core: #d63384;
+    --gs-pink-100: hsl(331, 47%, 90%);
+    --gs-pink-150: hsl(331, 47%, 85%);
+    --gs-pink-200: hsl(331, 47%, 80%);
+    --gs-pink-300: hsl(331, 47%, 70%);
+    --gs-pink-400: hsl(331, 47%, 60%);
+    --gs-pink-500: hsl(331, 47%, 50%);
+    --gs-pink-600: hsl(331, 47%, 40%);
+    --gs-pink-700: hsl(331, 47%, 30%);
+    --gs-pink-800: hsl(331, 47%, 20%);
+    --gs-pink-850: hsl(331, 47%, 15%);
+    --gs-pink-900: hsl(331, 47%, 10%);
+    /* #endregion pink */
+
+    /* #region gray */
+    --gs-gray-core: #adb5bd;
+    --gs-gray-100: hsl(210, 17%, 98%);
+    --gs-gray-150: hsl(210, 17%, 93%);
+    --gs-gray-200: hsl(210, 17%, 88%);
+    --gs-gray-300: hsl(210, 17%, 78%);
+    --gs-gray-400: hsl(210, 17%, 68%);
+    --gs-gray-500: hsl(210, 17%, 58%);
+    --gs-gray-600: hsl(210, 17%, 48%);
+    --gs-gray-700: hsl(210, 17%, 38%);
+    --gs-gray-800: hsl(210, 17%, 28%);
+    --gs-gray-850: hsl(210, 17%, 23%);
+    --gs-gray-900: hsl(210, 17%, 18%);
+    /* #endregion gray */
+
+    --gs-dark-color: #212121;
+    --gs-light-color: #deeefb;
+}
+
+.navbar,
+.footer {
+    background-color: var(--gs-theme-900);
+}
+
+.footer {
+    color: var(--gs-theme-200);
+}
+
+body {
+    background-color: var(--gs-theme-100);
+    color: var(--gs-dark-color);
+}
+
+
+
+/* #region sticky footer */
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* #endregion sticky footer */
+
+.btn-primary {
+    --bs-btn-bg: var(--gs-theme-600);
+    --bs-btn-border-color: var(--gs-theme-600);
+    --bs-btn-hover-bg: var(--gs-theme-700);
+    --bs-btn-hover-border-color: var(--gs-theme-700);
+}
+
+.socialIcons {
+    font-size: 2rem;
+    padding-left: .5rem;
+    color: var(--gs-theme-300);
+    transition: color .2s;
+}
+
+.socialIcons:hover {
+    color: var(--gs-theme-core);
+}
+
+.app-logo {
+    max-width: 250px;
+}
+
+.checklist i {
+    color: var(--gs-theme-core);
+    padding-right: .5rem;
+}
+
+.devicons {
+    font-size: 4rem;
+    padding-left: .5rem;
+}
